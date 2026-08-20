@@ -1,66 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Descomplica Soluções</title>
-  <meta name="description" content="Descomplica Soluções - Solicite um orçamento ou compre online.">
-  <style>
-    :root{--navy:#031f43;--navy2:#062d5d;--orange:#f59a16;--cyan:#18a8df;--white:#fff;--muted:#c5d1df}
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{min-height:100vh;background:radial-gradient(circle at 50% 28%,#0a376b 0,#031f43 48%,#02172f 100%);color:var(--white);font-family:Arial,Helvetica,sans-serif}
-    .page{max-width:900px;margin:auto;padding:44px 20px 28px}
-    header{text-align:center;margin-bottom:34px}
-    .ds-logo{width:104px;height:104px;margin:0 auto 12px;border-radius:25px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;box-shadow:0 12px 30px rgba(0,0,0,.25)}
-    .ds-logo div{display:flex;align-items:center;justify-content:center;color:#fff;font:bold italic 44px Georgia,serif}.ds1{background:#f99a19}.ds2{background:#197f9e}.ds3{background:#197f9e}.ds4{background:#f99a19}
-    .brand-name{font-size:27px;font-weight:700;letter-spacing:.2px}.brand-name span{color:var(--orange)}
-    .intro{margin-top:28px}.intro h1{font-size:34px;line-height:1.15;margin-bottom:10px}.intro p{font-size:17px;color:var(--muted)}
-    .options{display:grid;gap:18px;margin-top:32px}
-    .option{display:flex;align-items:center;gap:24px;min-height:170px;padding:24px 28px;border-radius:20px;text-decoration:none;color:white;border:1px solid rgba(255,255,255,.12);transition:.18s ease;overflow:hidden}
-    .option:hover{transform:translateY(-2px);box-shadow:0 14px 35px rgba(0,0,0,.22)}
-    .quote{background:linear-gradient(110deg,rgba(245,154,22,.14),rgba(2,23,47,.35));border-color:rgba(245,154,22,.75)}
-    .online{background:linear-gradient(110deg,rgba(24,168,223,.12),rgba(2,23,47,.4));border-color:rgba(24,168,223,.75)}
-    .icon{width:70px;height:70px;min-width:70px;border-radius:50%;display:grid;place-items:center;background:var(--orange);box-shadow:0 8px 22px rgba(0,0,0,.2)}
-    .phone{font-size:35px;line-height:1;color:white}
-    .content{flex:1}.content h2{font-size:25px;margin-bottom:8px}.quote h2{color:var(--orange)}.online h2{color:#32b8eb}.content p{font-size:16px;color:#d4deea;line-height:1.45}
-    .arrow{font-size:35px;font-weight:300;opacity:.9}
-    .preview{width:205px;height:112px;flex-shrink:0;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:#062d5d;padding:10px;overflow:hidden;box-shadow:inset 0 0 25px rgba(0,0,0,.2)}
-    .preview-top{display:flex;align-items:center;gap:7px;font-size:11px;font-weight:800;margin-bottom:9px}.preview-logo{color:#20a8dc;font-size:16px;font-style:italic}.preview-logo span{color:#ff8a00}.preview-bar{height:4px;background:#174a78;border-radius:5px;flex:1}
-    .preview-banner{height:34px;border-radius:5px;background:linear-gradient(120deg,#06376d,#0d5a8e);display:flex;align-items:center;padding:0 8px;font-size:8px;font-weight:700;color:white}.preview-grid{display:flex;gap:5px;margin-top:7px}.product{height:29px;flex:1;border-radius:4px;background:#f3f5f7;border:1px solid #d9e0e7}.product:before{content:"";display:block;width:12px;height:12px;background:#d1d8df;border-radius:3px;margin:4px auto}
-    .benefits{display:flex;justify-content:center;gap:45px;margin:34px 0 8px;color:#d6e1ed;font-size:14px;text-align:center}.benefit{max-width:190px}.dot{width:8px;height:8px;background:var(--cyan);border-radius:50%;margin:0 auto 8px}
-    footer{margin-top:34px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);text-align:center;color:#9fb0c4;font-size:13px}.footer-brand{color:white;font-weight:700;margin-bottom:5px}.footer-brand span{color:var(--orange)}
-    @media(max-width:650px){.page{padding-top:30px}.ds-logo{width:90px;height:90px}.brand-name{font-size:24px}.intro h1{font-size:28px}.option{min-height:0;padding:20px;gap:16px}.preview{width:150px;height:88px}.content h2{font-size:20px}.content p{font-size:14px}.arrow{display:none}.benefits{gap:14px}.benefit{font-size:12px}}
-    @media(max-width:480px){.option{display:grid;grid-template-columns:auto 1fr}.preview{grid-column:1/-1;width:100%;height:125px}.icon{width:58px;height:58px;min-width:58px}.benefits{display:none}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Descomplica Soluções</title>
+<meta name="description" content="Descomplica Soluções - Solicite um orçamento ou compre online.">
+<style>
+:root{--navy:#031f43;--orange:#f59a16;--cyan:#18a8df;--white:#fff;--muted:#c5d1df}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-height:100vh;background:radial-gradient(circle at 50% 28%,#0a376b 0,#031f43 48%,#02172f 100%);color:var(--white);font-family:Arial,Helvetica,sans-serif}
+.page{max-width:900px;margin:auto;padding:44px 20px 28px}
+header{text-align:center;margin-bottom:34px}
+.ds-logo{width:112px;height:112px;margin:0 auto 13px;display:block;object-fit:contain}
+.brand-name{font-size:27px;font-weight:700;letter-spacing:.2px}.brand-name span{color:var(--orange)}
+.intro{margin-top:28px}.intro h1{font-size:34px;line-height:1.15}
+.options{display:grid;gap:18px;margin-top:32px}
+.option{display:flex;align-items:center;gap:24px;min-height:170px;padding:24px 28px;border-radius:20px;text-decoration:none;color:white;border:1px solid rgba(255,255,255,.12);transition:.18s ease;overflow:hidden}
+.option:hover{transform:translateY(-2px);box-shadow:0 14px 35px rgba(0,0,0,.22)}
+.quote{background:linear-gradient(110deg,rgba(245,154,22,.14),rgba(2,23,47,.35));border-color:rgba(245,154,22,.75)}
+.online{background:linear-gradient(110deg,rgba(24,168,223,.12),rgba(2,23,47,.4));border-color:rgba(24,168,223,.75)}
+.icon{width:70px;height:70px;min-width:70px;border-radius:50%;display:grid;place-items:center;background:var(--orange);box-shadow:0 8px 22px rgba(0,0,0,.2)}
+.content{flex:1}.content h2{font-size:25px;margin-bottom:8px}.quote h2{color:var(--orange)}.online h2{color:#32b8eb}.content p{font-size:16px;color:#d4deea;line-height:1.45}
+.arrow{font-size:35px;font-weight:300;opacity:.9}
+.preview{width:205px;height:112px;flex-shrink:0;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:#fff;padding:5px;overflow:hidden;box-shadow:inset 0 0 25px rgba(0,0,0,.12)}
+.preview img{width:100%;height:100%;object-fit:contain;display:block}
+.benefits{display:flex;justify-content:center;gap:45px;margin:34px 0 8px;color:#d6e1ed;font-size:14px;text-align:center}.benefit{max-width:190px}.dot{width:8px;height:8px;background:var(--cyan);border-radius:50%;margin:0 auto 8px}
+footer{margin-top:34px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);text-align:center;color:#9fb0c4;font-size:13px}.footer-brand{color:white;font-weight:700;margin-bottom:5px}.footer-brand span{color:var(--orange)}
+@media(max-width:650px){.page{padding-top:30px}.ds-logo{width:96px;height:96px}.brand-name{font-size:24px}.intro h1{font-size:28px}.option{min-height:0;padding:20px;gap:16px}.preview{width:150px;height:88px}.content h2{font-size:20px}.content p{font-size:14px}.arrow{display:none}.benefits{gap:14px}.benefit{font-size:12px}}
+@media(max-width:480px){.option{display:grid;grid-template-columns:auto 1fr}.preview{grid-column:1/-1;width:100%;height:125px}.icon{width:58px;height:58px;min-width:58px}.benefits{display:none}}
+</style>
 </head>
 <body>
-  <main class="page">
-    <header>
-      <div class="ds-logo" aria-label="Descomplica Soluções"><div class="ds1">D</div><div class="ds2">S</div><div class="ds3">D</div><div class="ds4">S</div></div>
-      <div class="brand-name">Descomplica <span>Soluções</span></div>
-      <div class="intro"><h1>Como podemos ajudar?</h1><p>Escolha uma opção para continuar.</p></div>
-    </header>
-
-    <section class="options">
-      <a class="option quote" href="https://wa.me/5547988327956" target="_blank" rel="noopener">
-        <div class="icon phone" aria-hidden="true">☎</div>
-        <div class="content"><h2>Solicitar orçamento</h2><p>Fale conosco pelo WhatsApp e solicite um orçamento personalizado.</p></div>
-        <div class="arrow">›</div>
-      </a>
-
-      <a class="option online" href="https://www.primtec.com.br" target="_blank" rel="noopener">
-        <div class="preview" aria-label="Prévia da loja PRIMTEC">
-          <div class="preview-top"><div class="preview-logo">PRIM<span>TEC</span></div><div class="preview-bar"></div></div>
-          <div class="preview-banner">AUTOMAÇÃO INDUSTRIAL E MATERIAIS ELÉTRICOS</div>
-          <div class="preview-grid"><div class="product"></div><div class="product"></div><div class="product"></div><div class="product"></div></div>
-        </div>
-        <div class="content"><h2>Comprar online</h2><p>Acesse a loja online PRIMTEC e confira nossos produtos.</p></div>
-        <div class="arrow">›</div>
-      </a>
-    </section>
-
-    <div class="benefits"><div class="benefit"><div class="dot"></div>Produtos de qualidade e procedência</div><div class="benefit"><div class="dot"></div>Soluções que otimizam seu tempo</div><div class="benefit"><div class="dot"></div>Atendimento especializado</div></div>
-    <footer><div class="footer-brand">Descomplica <span>Soluções</span></div>Conectando você às melhores soluções de forma descomplicada.</footer>
-  </main>
+<main class="page">
+<header>
+<img class="ds-logo" src="data:image/webp;base64,UklGRiAAAABXRUJQVlA4TAYAAAAvAAAAEAcQAA==" alt="Descomplica Soluções">
+<div class="brand-name">Descomplica <span>Soluções</span></div>
+<div class="intro"><h1>Como podemos ajudar?</h1></div>
+</header>
+<section class="options">
+<a class="option quote" href="https://wa.me/5547988327956" target="_blank" rel="noopener">
+<div class="icon" aria-hidden="true"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.5 11.7a8.4 8.4 0 0 1-12.3 7.4L3.5 20l1-4.5A8.4 8.4 0 1 1 20.5 11.7Z" stroke="white" stroke-width="1.8"/><path d="M9.2 8.5c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.8 1.8c.1.2.1.4-.1.6l-.6.7c.5 1 1.3 1.8 2.3 2.3l.7-.6c.2-.2.4-.2.6-.1l1.8.8c.3.1.4.3.4.5v.5c0 .3-.1.5-.4.7-.4.3-1 .4-1.5.3-2.9-.5-5.3-2.9-5.8-5.8-.1-.5 0-1.1.3-1.5Z" fill="white"/></svg></div>
+<div class="content"><h2>Solicitar orçamento</h2><p>Fale conosco pelo WhatsApp e solicite um orçamento personalizado.</p></div><div class="arrow">›</div>
+</a>
+<a class="option online" href="https://www.primtec.com.br" target="_blank" rel="noopener">
+<div class="preview"><img src="data:image/webp;base64,UklGRiAAAABXRUJQVlA4TAYAAAAvAAAAEAcQAA==" alt="PRIMTEC"></div>
+<div class="content"><h2>Comprar online</h2><p>Acesse a loja online PRIMTEC e confira nossos produtos.</p></div><div class="arrow">›</div>
+</a>
+</section>
+<div class="benefits"><div class="benefit"><div class="dot"></div>Produtos de qualidade e procedência</div><div class="benefit"><div class="dot"></div>Soluções que otimizam seu tempo</div><div class="benefit"><div class="dot"></div>Atendimento especializado</div></div>
+<footer><div class="footer-brand">Descomplica <span>Soluções</span></div>Conectando você às melhores soluções de forma descomplicada.</footer>
+</main>
 </body>
 </html>
