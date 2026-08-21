@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://descomplicasolucoes.com.br/sitemap.xml
