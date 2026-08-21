@@ -8,12 +8,12 @@
 *{box-sizing:border-box}
 body{margin:0;background:#fff;color:#172b46;font-family:Arial,Helvetica,sans-serif}
 .page{min-height:100vh;display:flex;flex-direction:column}
-.header{width:min(1040px,calc(100% - 40px));margin:0 auto;padding:34px 20px 30px;display:flex;align-items:center;gap:48px}
+.header{width:100%;margin:0;padding:28px max(20px,calc((100% - 1040px)/2));display:flex;align-items:center;gap:48px;background:#07518a;color:#fff}
 .header-logo{width:190px;flex:0 0 190px;text-align:center}
-.header img{width:min(120px,24vw);height:auto;display:block;margin:0 auto 10px}
-.brand{font-size:17px;line-height:1.05;font-weight:800;margin:0;color:#075b98}.brand span{color:#ef7900}
-.header-message{flex:1;text-align:center;color:#172b46;font-size:24px;line-height:1.2;font-weight:800;text-transform:uppercase;max-width:680px}
-.header-message strong{color:#075b98}
+.header img{width:min(100px,24vw);height:auto;display:block;margin:0 auto 8px}
+.brand{font-size:16px;line-height:1.05;font-weight:700;margin:0;color:#fff}.brand span{color:#ff8500}
+.header-message{flex:1;text-align:center;color:#fff;font-family:"Segoe UI",Arial,Helvetica,sans-serif;font-size:19px;line-height:1.35;font-weight:400;max-width:720px}
+.header-message strong{display:block;color:#fff;font-size:27px;line-height:1.15;font-weight:700;margin-bottom:8px}
 .main{width:min(1040px,calc(100% - 40px));margin:12px auto 0;position:relative}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-bottom:42px}
 .card{background:#fff;border-radius:18px;box-shadow:0 4px 18px rgba(19,47,77,.12);padding:32px 56px 28px;text-align:center;min-height:485px;display:flex;flex-direction:column;align-items:center;border-bottom:3px solid}
@@ -27,7 +27,7 @@ h2{font-size:31px;line-height:1.1;margin:0 0 14px;font-weight:800}.shop h2{color
 .primtec{width:min(360px,90%);height:auto;margin-top:18px}
 .benefits{border-top:1px solid #e5e9ee;padding:28px 0 26px;display:grid;grid-template-columns:repeat(3,1fr);gap:0}.benefit{display:flex;align-items:center;gap:18px;padding:0 34px;border-right:1px solid #d7dde5}.benefit:last-child{border-right:0}.benefit-icon{width:76px;height:76px;flex:0 0 76px;border-radius:50%;background:#e8f1f8;color:#075b98;display:flex;align-items:center;justify-content:center}.benefit-icon svg{width:44px;height:44px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.benefit h3{margin:0 0 7px;color:#075b98;font-size:20px}.benefit p{margin:0;color:#53647b;font-size:17px;line-height:1.35}
 .footer{background:#07518a;color:#fff;min-height:125px;display:grid;grid-template-columns:1fr 1.4fr 1fr;align-items:center;padding:20px max(40px,calc((100% - 1280px)/2));gap:30px}.footer-brand{display:flex;align-items:center;gap:16px}.footer-brand img{width:58px;height:58px}.footer-brand strong{font-size:20px}.footer-copy{text-align:center;font-size:16px;line-height:1.5}.footer-copy a{color:#fff;text-decoration:none}.footer-wa{display:flex;align-items:center;justify-content:flex-end;gap:15px;font-size:18px;font-weight:700;text-decoration:none;color:#fff}.footer-wa svg{width:42px;height:42px;fill:none;stroke:#fff;stroke-width:2}
-@media(max-width:800px){.header{width:calc(100% - 24px);padding:25px 10px 20px;flex-direction:column;gap:14px}.header-logo{width:auto;flex:0 0 auto}.header img{width:min(96px,28vw)}.brand{font-size:14.5px}.header-message{font-size:18px;line-height:1.25}.main{width:calc(100% - 24px);margin-top:20px}.cards{grid-template-columns:1fr;gap:20px}.card{min-height:0;padding:28px 24px}.benefits{grid-template-columns:1fr;gap:18px}.benefit{border-right:0;border-bottom:1px solid #d7dde5;padding:12px 10px}.benefit:last-child{border-bottom:0}.footer{grid-template-columns:1fr;text-align:center;padding:25px 20px;gap:18px}.footer-brand,.footer-wa{justify-content:center}.footer-copy{order:3}h2{font-size:27px}.desc{font-size:18px}}
+@media(max-width:800px){.header{width:100%;padding:24px 18px 22px;flex-direction:column;gap:12px}.header-logo{width:auto;flex:0 0 auto}.header img{width:min(86px,28vw)}.brand{font-size:14px}.header-message{font-size:17px;line-height:1.3}.header-message strong{font-size:22px;line-height:1.18}.main{width:calc(100% - 24px);margin-top:20px}.cards{grid-template-columns:1fr;gap:20px}.card{min-height:0;padding:28px 24px}.benefits{grid-template-columns:1fr;gap:18px}.benefit{border-right:0;border-bottom:1px solid #d7dde5;padding:12px 10px}.benefit:last-child{border-bottom:0}.footer{grid-template-columns:1fr;text-align:center;padding:25px 20px;gap:18px}.footer-brand,.footer-wa{justify-content:center}.footer-copy{order:3}h2{font-size:27px}.desc{font-size:18px}}
 </style>
 </head>
 <body>
@@ -37,7 +37,7 @@ h2{font-size:31px;line-height:1.1;margin:0 0 14px;font-weight:800}.shop h2{color
 <img src="assets/descomplica-logo.svg" alt="Descomplica Soluções">
 <div class="brand">Descomplica <span>Soluções</span></div>
 </div>
-<div class="header-message"><strong>COMPRE MATERIAIS ELÉTRICOS DIRETAMENTE CONOSCO</strong><br>Escolha um dos nossos canais oficiais de venda e encontre os produtos que você procura.</div>
+<div class="header-message"><strong>COMPRE MATERIAIS ELÉTRICOS DIRETAMENTE CONOSCO</strong>Escolha um dos nossos canais oficiais de venda e encontre os produtos que você procura.</div>
 </header>
 <main class="main">
 <div class="cards">
@@ -63,7 +63,7 @@ h2{font-size:31px;line-height:1.1;margin:0 0 14px;font-weight:800}.shop h2{color
 </main>
 <footer class="footer">
 <div class="footer-brand"><img src="assets/descomplica-logo.svg" alt="Descomplica Soluções"><strong>DESCOMPLICA SOLUÇÕES</strong></div>
-<div class="footer-copy">© <span id="current-year"></span> Descomplica Soluções. Todos os direitos reservados.<br>CNPJ: 38.904.806/0001-87<br><a href="mailto:descomplicasolucoesind@gmail.com">descomplicasolucoesind@gmail.com</a></div>
+<div class="footer-copy">© <span id="current-year"></span> Descomplica Soluções. Todos os direitos reservados.<br>CNPJ: 38.904.806/0001-87<br>E-mail: <a href="mailto:descomplicasolucoesind@gmail.com">descomplicasolucoesind@gmail.com</a></div>
 <a class="footer-wa" href="https://wa.me/5547988327956" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.8 7.3L4 20l1.3-3.5A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="M8.5 8.2c.3-.4.6-.4.9-.1l1 1.2c.2.2.2.5 0 .8l-.5.6c.8 1.3 1.7 2.2 3 3l.6-.5c.3-.2.6-.2.8 0l1.2 1c.3.3.3.6-.1.9-.5.5-1.1.7-1.8.5-2.1-.6-5-3.5-5.6-5.6-.2-.7 0-1.3.5-1.8Z"/></svg>Fale conosco pelo WhatsApp</a>
 </footer>
 </div>
